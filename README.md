@@ -1,2 +1,2 @@
 # SpotifyLite_Project
-Finale Project : Mobile Application Development
+Final Project : Mobile Application Development
