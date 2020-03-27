@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('glide-4.9.0.aar'))

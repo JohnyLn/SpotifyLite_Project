@@ -17,6 +17,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    //https://stackoverflow.com/questions/49891730/invoke-customs-are-only-supported-starting-with-android-0-min-api-26
+    /*
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }*/
 }
 
 dependencies {
@@ -29,6 +35,46 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+
+    //----------------------------------------------
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
+
+
+    //Add------------------------
+    //Player API and APP REMOTE
+    implementation project(':spotify-app-remote-release-0.6.0')
+    implementation project(':spotify-player-24-noconnect-2.20b')
+    //WEB API OAuth
+    implementation project(':spotify-auth-release-1.2.3')
+
+
+    //Retrofit https://square.github.io/retrofit/
+    //implementation 'com.squareup.retrofit2:retrofit:2.8.0'
+
+    //Gson  https://github.com/google/gson
+    //implementation 'com.google.code.gson:gson:2.8.6'
+
+    // https://github.com/square/retrofit/blob/master/retrofit-converters/gson/README.md
+    //implementation 'com.squareup.retrofit2:converter-gson:2.8.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    //okhttp3 https://square.github.io/okhttp/
+    //testImplementation("com.squareup.okhttp3:mockwebserver:4.4.0")
+
+
+
+
+
+
+
+    //---------------------------
+
+
 }

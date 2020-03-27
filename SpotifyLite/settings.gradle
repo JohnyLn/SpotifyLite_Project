@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':spotify-auth-release-1.2.3', ':spotify-app-remote-release-0.7.0', ':spotify-app-remote-release-0.6.0', ':spotify-player-24-noconnect-2.20b', ':glide-4.9.0', ':gson-2.5', ':retrofit-2.5.0', ':converter-gson-2.5.0', ':mockwebserver-4.4.0'
 rootProject.name='SpotifyLite'
